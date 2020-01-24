@@ -19,6 +19,15 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = 40
+        layout.minimumInteritemSpacing = 0
+        
+        let width = view.frame.size.width
+        let height = (width / 9) * 16
+        
+        layout.itemSize = CGSize(width: width, height: height)
 
         let url = URL(string: "https://api.themoviedb.org/3/movie/299534/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -47,7 +56,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let movie = movies[indexPath.item]
         
-        let baseURL = "https://image.tmdb.org/t/p/w185"
+        let baseURL = "https://image.tmdb.org/t/p/w780"
         let posterPath = movie["poster_path"] as! String
              
         let posterURL = URL(string: baseURL + posterPath)!
