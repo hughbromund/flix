@@ -21,11 +21,11 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         collectionView.dataSource = self
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.minimumLineSpacing = 40
-        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
         
-        let width = view.frame.size.width
-        let height = (width / 9) * 16
+        let width = (view.frame.size.width - 1 * layout.minimumInteritemSpacing) / 2
+        let height = (width / 27) * 40
         
         layout.itemSize = CGSize(width: width, height: height)
 
@@ -48,6 +48,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(movies.count)
         return movies.count
      }
      
@@ -67,7 +68,23 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         return cell
      }
      
-     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           // Get the new view controller using segue.destination.
+           // Pass the selected object to the new view controller.
+           
+           let cell = sender as! UICollectionViewCell
+           
+           let indexPath = collectionView.indexPath(for: cell)!
+           
+           let movie = movies[indexPath.row]
+           
+           let detailsViewController = segue.destination as! MovieDetailsViewController
+           
+           detailsViewController.movie = movie
+           
+           // collectionView.deselectCell(at: indexPath, animated: true)
+       }
     
 
     /*
