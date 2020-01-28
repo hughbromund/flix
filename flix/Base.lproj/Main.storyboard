@@ -47,7 +47,6 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6pk-QR-SZN">
                                                     <rect key="frame" x="20" y="11" width="78" height="139"/>
-                                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="78" id="P1v-Ey-xom"/>
                                                         <constraint firstAttribute="height" constant="139" id="lfp-Qv-cUW"/>
@@ -135,9 +134,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkN-1k-mOf">
-                                <rect key="frame" x="135" y="328" width="259" height="43"/>
+                                <rect key="frame" x="135" y="328" width="259" height="85"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="01e-VO-q1u"/>
+                                    <constraint firstAttribute="height" constant="85" id="01e-VO-q1u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -178,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPa-zg-f09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="1492"/>
+            <point key="canvasLocation" x="128.98550724637681" y="1491.9642857142856"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="ni0-A8-ehb">
@@ -289,6 +288,6 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rOb-Si-wXc"/>
+        <segue reference="G57-I6-9CZ"/>
     </inferredMetricsTieBreakers>
 </document>
