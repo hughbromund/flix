@@ -20,7 +20,9 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="http://g.recordit.co/LzAbTBmNic.gif" width=250><br>
 
 ### Notes
+
 The tutorial video appears to use an older version of iOS. In the current iOS, when adding a grid cell prototype, a Content View is placed inside of it by default. This caused me many problems because the contnet view wanted to pad the sides of the image I was trying to show. Eventually, I had to use autolayout to simply override the padding that was being added. 
+
 ---
 
 ## Flix Part 1
