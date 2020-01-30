@@ -53,18 +53,18 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1M-Ey-NIi">
-                                                    <rect key="frame" x="114" y="11" width="280" height="48"/>
+                                                    <rect key="frame" x="114" y="11" width="280" height="74"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="48" id="S2J-QV-Wp5"/>
+                                                        <constraint firstAttribute="height" constant="74" id="S2J-QV-Wp5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwc-oK-Clt">
-                                                    <rect key="frame" x="114" y="67" width="280" height="72"/>
+                                                    <rect key="frame" x="114" y="93" width="280" height="46"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="72" id="imI-BJ-XrH"/>
+                                                        <constraint firstAttribute="height" constant="46" id="imI-BJ-XrH"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559" y="676"/>
+            <point key="canvasLocation" x="-559.4202898550725" y="675"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="bBs-8C-bFW">
@@ -288,6 +288,6 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G57-I6-9CZ"/>
+        <segue reference="rOb-Si-wXc"/>
     </inferredMetricsTieBreakers>
 </document>
